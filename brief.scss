@@ -1,0 +1,36 @@
+$myFont: Helvetica, sans-serif;
+$Color: #4A004F;
+$myFont: 20px;
+$txtcolor: white;
+
+
+
+.top{
+    background-color : $Color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .middle_head{
+        font-size: $myFont;
+        color: $txtcolor;
+    }
+    .left_head{
+        color: $txtcolor;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .right_head{
+        margin: 12px;
+    }
+    
+}
+.first{
+    .f_background{
+    background-image: url("/img/oba\ fod\ im.png");
+    background-size: cover;
+    height: 619px;
+    width: 1269px;
+}
+}
+
+

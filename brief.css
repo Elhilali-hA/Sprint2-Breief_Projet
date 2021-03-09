@@ -1,0 +1,36 @@
+.top {
+  background-color: #4A004F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top .middle_head {
+  font-size: 20px;
+  color: white;
+}
+
+.top .left_head {
+  color: white;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.top .right_head {
+  margin: 12px;
+}
+
+.first .f_background {
+  background-image: url("/img/oba fod im.png");
+  background-size: cover;
+  height: 619px;
+  width: 1269px;
+}
+/*# sourceMappingURL=brief.css.map */
