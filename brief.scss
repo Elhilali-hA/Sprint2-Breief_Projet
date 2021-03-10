@@ -3,7 +3,10 @@ $Color: #4A004F;
 $myFont: 20px;
 $txtcolor: white;
 
-
+body{
+    margin: 0%;
+    padding: 0%;
+}
 
 .top{
     background-color : $Color;
@@ -27,9 +30,16 @@ $txtcolor: white;
 .first{
     .f_background{
     background-image: url("/img/oba\ fod\ im.png");
-    background-size: cover;
-    height: 619px;
-    width: 1269px;
+    background-size: 1263px 447px;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    
+    
 }
 }
 
