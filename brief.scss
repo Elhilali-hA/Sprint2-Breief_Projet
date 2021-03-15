@@ -31,8 +31,11 @@ body{
     flex-direction: row;
     justify-content: space-between;
     .middle_head{ 
-        font-size: $myFont;
-        color: $bcolor;
+        background-image: url(/img/logo.png);
+        background-size: 260px 114px;
+        width:20%;
+        height: 100px;
+        background-repeat: no-repeat;
     }
     .left_head{
         color: $bcolor;
@@ -218,11 +221,11 @@ margin-left: 200px;
 }
 .order{
     &__background{
-        position: relative;
-        background-image: url(/img/drew.jpg);
-        background-size: 100% 300px;
-        background-repeat: no-repeat;
-        height: 300px;
+    position: relative;
+    background-image: url(/img/drew.jpg.png);
+    background-size: 100% 306px;
+    background-repeat: no-repeat;
+    height: 308px;
         &__button{
             position: absolute;
             top: 80%;
@@ -239,4 +242,87 @@ margin-left: 200px;
         width: 100%;
 
     }
+}
+// dashboard
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $buttcolor;
+    height: 100px;
+.show{
+    display: grid;
+    grid-template-rows: 50px 20px;
+    grid-template-columns: 80px 80px 80px;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 30px;
+    &__profil{
+        background-image: url("/img/user.svg");
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat;
+    }
+    &__menu{
+        background-image: url("/img/menu.svg");
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat;
+    }
+    &__user{
+        background-image: url("./img/group.svg");
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat;
+    }
+    #txt{
+        font-size: 12px;
+        color: #000;
+        
+        
+    }
+}
+&__logo{
+    background-image: url(/img/logo.png);
+    background-size: 213px 125px;
+    width:  30%;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+}
+.body{
+    display: flex;
+    justify-content: space-around;
+    .password{
+        
+        background-color: $buttcolor;
+        border-radius: 15px;
+        padding: 15px;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .profil{
+        background-color: rgba(255,255,255,0.5);
+        border-radius: 15px;
+
+        width: 50%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+       padding: 15px;
+       margin: 15px;
+    }
+}
+.image{
+    background-image: url(/img/interior.jpg);
+    background-size: 1280px 900px;
+   width: 100%;
+   height: 510px;
+    background-repeat: no-repeat;
+    z-index: -1;
 }

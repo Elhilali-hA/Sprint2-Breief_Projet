@@ -28,8 +28,11 @@ body {
 }
 
 .top .middle_head {
-  font-size: 20px;
-  color: black;
+  background-image: url(/img/logo.png);
+  background-size: 260px 114px;
+  width: 20%;
+  height: 100px;
+  background-repeat: no-repeat;
 }
 
 .top .left_head {
@@ -265,10 +268,10 @@ body {
 
 .order__background {
   position: relative;
-  background-image: url(/img/drew.jpg);
-  background-size: 100% 300px;
+  background-image: url(/img/drew.jpg.png);
+  background-size: 100% 306px;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 308px;
 }
 
 .order__background__button {
@@ -281,5 +284,116 @@ body {
   background-color: #C1E8FB;
   height: 300px;
   width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #C1E8FB;
+  height: 100px;
+}
+
+.header .show {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px 20px;
+      grid-template-rows: 50px 20px;
+  -ms-grid-columns: 80px 80px 80px;
+      grid-template-columns: 80px 80px 80px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50%;
+  margin: 30px;
+}
+
+.header .show__profil {
+  background-image: url("/img/user.svg");
+  background-size: 26px 55px;
+  width: 30%;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.header .show__menu {
+  background-image: url("/img/menu.svg");
+  background-size: 26px 55px;
+  width: 30%;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.header .show__user {
+  background-image: url("./img/group.svg");
+  background-size: 26px 55px;
+  width: 30%;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.header .show #txt {
+  font-size: 12px;
+  color: #000;
+}
+
+.header__logo {
+  background-image: url(/img/logo.png);
+  background-size: 213px 125px;
+  width: 30%;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.body .password {
+  background-color: #C1E8FB;
+  border-radius: 15px;
+  padding: 15px;
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.body .profil {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  width: 50%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  margin: 15px;
+}
+
+.image {
+  background-image: url(/img/interior.jpg);
+  background-size: 1280px 900px;
+  width: 100%;
+  height: 510px;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 /*# sourceMappingURL=brief.css.map */
