@@ -1,0 +1,78 @@
+// menu
+.fixed{
+    background-color: $buttcolor;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__left{
+        margin-top: -20px;
+        background-image: url(breif2/img/logo.png);
+        background-size: 196px 144px;
+        width: 207px;
+        height: 125px;
+        background-repeat: no-repeat;
+    }
+    &__middle{
+        margin-top: 30px;
+        text-decoration: none;
+    }
+    &__right{
+        margin: 10px;
+        background-image: url(breif2/img/user-profil.svg);
+        background-size: 33px 50px;
+         width: 50px;
+         height: 50px;
+         background-repeat: no-repeat;
+    }
+}
+.photo{
+    background-image: url(breif2/img/pizza.jpg);
+    background-size: 1160px 246px;
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+.points{
+    display: flex;
+    width: 200px;
+    height: 120px;
+    &__point1{
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 12px;
+    }
+    &__point2{
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 12px;
+    }
+    &__point3{
+        background-color: rgb(5, 5, 5);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 12px;
+    }
+    &__point4{
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 12px;
+    }
+    &__point5{
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 12px;
+        color: black;
+    }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stayl.css">
+    <link rel="stylesheet" type="text/css" href="satyl.css/stayl.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,6 +22,13 @@
     <div class="photo">
         <h3>azertyudf</h3>
         <p>ezsxdcfvgbhnjkthdqzsedrtgyhujio</p>
+        <div class="points">
+        <div class="points__point1"></div>
+        <div class="points__point2"></div>
+        <div class="points__point3"></div>
+        <div class="points__point4"></div>
+        <div class="points__point5"></div>
+        </div>
     </div>
 </body>
 </html>
