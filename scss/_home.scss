@@ -1,0 +1,241 @@
+@import "variable";
+
+body{
+    margin: 0%;
+    padding: 0%;
+    
+    
+}
+.all{
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    background-image: url(/breif2/img/interior.jpg);
+    background-size: 1263px 700px;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+
+
+
+.top{
+    background-color : $txtcolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .middle_head{ 
+        background-image: url(/breif2/img/logo.png);
+        background-size: 260px 114px;
+        width:20%;
+        height: 100px;
+        background-repeat: no-repeat;
+    }
+    .left_head{
+        color: $bcolor;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    
+}
+.first{
+    
+    .f_background{
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    .opaback{
+        background-color: $txtcolor;
+        opacity: 65%;
+        width: 300px;
+        height: 200px;
+        border-radius: 15px;
+        #b1{
+            width: 150px;
+            border-radius: 15px;
+            height: 40px;
+            margin-left: 69px;
+            margin-top: 38px;
+            border: 1px solid $bcolor;
+        }
+        #b2{
+            width: 150px;
+            height: 40px;
+            border-radius: 15px;
+            margin-top: 20px;
+            margin-left: 69px;
+            border: 1px solid $bcolor;
+        }
+    }
+    
+}
+}
+.foot{
+    position: fixed;
+  bottom: 0;
+  right: 0;
+   width: 100%;
+    background-color: $Color;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    &__img{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    &__txt{
+        margin-top: 20px;
+    }
+    &__button{
+        margin-top: 20px;
+        margin-right: 10px;
+        border-radius: 15px;
+       
+        #b1{
+     font-size: 15px;
+        border-radius: 15px;
+        border: 1px solid $Color;
+        background-color: $buttcolor;
+        cursor: pointer;
+        }
+        #b2{
+            font-size: 15px;
+            border-radius: 15px;
+            border: 1px solid $Color;
+            cursor: pointer;
+        }
+    }
+}
+.bac_img{
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 100px 100px 100px;
+      justify-content: center;
+      row-gap: 40px;
+      column-gap: 100px;
+    .back_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 4px solid black;
+    width: 400px;
+    height: 100px;
+    .image1{
+        background-image: url(/breif2/img/pizza.jpg);
+        background-size: 194px 100px;
+        width:50%;
+        height: 100px;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin: 3px;
+        
+    }
+    .paragraph1{
+        background-color: $blcolor;
+        
+    }
+    .h1{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .image2{
+        background-image: url(/breif2/img/hamburger.jpg);
+        background-size: 194px 100px;
+        width:50%;
+        height: 100px;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin: 3px;
+    }
+    .image3{
+        background-image: url(/breif2/img/Tcos.jpg);
+        background-size: 194px 100px;
+        width:50%;
+        height: 100px;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin: 3px;
+    }
+    
+}
+
+}
+.deliver{
+    background-color: #014B5D;
+    opacity: 84%;
+    height: 150px;
+    .grenn{
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 40px 40px;
+        column-gap: 200px;
+        justify-content: center;
+        padding: 33px;
+        .food{
+            background-image: url(/breif2/img/restaurant.svg);
+            background-size: 67px 38px;
+        background-repeat: no-repeat;
+        
+        }
+        .delivery{
+            background-image: url(/breif2/img/food-delivery.svg);
+            background-size: 67px 38px;
+        background-repeat: no-repeat;
+        }
+        .quality{
+            background-image: url(/breif2/img/juice.svg);
+            background-size: 67px 38px;
+        background-repeat: no-repeat;
+        }
+    }
+}
+.price{
+margin-left: 200px;
+    padding: 33px;
+    &__background{
+
+        justify-content: center;
+        background-color: $buttcolor;
+        padding: 33px;
+        width: 80%;
+        height: 150px;
+        display: grid;
+        grid-template-columns: 400px 100px;
+        grid-template-rows: 100px;
+        justify-content: center;
+    }
+    &__pizza{
+        background-image: url(/breif2/img/pizza.jpg);
+        background-size: 287px 100px;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+
+    }
+}
+.order{
+    &__background{
+    position: relative;
+    background-image: url(/breif2/img/drew.jpg.png);
+    background-size: 100% 306px;
+    background-repeat: no-repeat;
+    height: 308px;
+        &__button{
+            position: absolute;
+            top: 80%;
+            left: 45%;
+        }
+        
+    }
+}
+
+.footer{
+    &__background{
+        background-color: $blcolor;
+        height: 300px;
+        width: 100%;
+
+    }
+}

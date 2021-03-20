@@ -7,6 +7,6 @@
     "watch": "node-sass -o satyl.css stayl.scss -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "ANA",
   "license": "ISC"
 }
