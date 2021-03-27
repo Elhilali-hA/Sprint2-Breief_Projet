@@ -1,5 +1,4 @@
-@import "variable";
-
+@import "./variable";
 body{
     margin: 0%;
     padding: 0%;
@@ -75,7 +74,8 @@ body{
   bottom: 0;
   right: 0;
    width: 100%;
-    background-color: $Color;
+   background: rgb(129,211,218);
+   background: radial-gradient(circle, rgba(129,211,218,1) 0%, rgba(141,63,251,1) 100%);
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -96,7 +96,7 @@ body{
      font-size: 15px;
         border-radius: 15px;
         border: 1px solid $Color;
-        background-color: $buttcolor;
+        background-color: $blcolor;
         cursor: pointer;
         }
         #b2{
@@ -112,58 +112,67 @@ body{
       grid-template-columns: 400px 400px;
       grid-template-rows: 100px 100px 100px;
       justify-content: center;
-      row-gap: 40px;
+      row-gap: 80px;
       column-gap: 100px;
     .back_img{
+        background-color: rgba(249, 251, 252, 0.8);
+        border-radius: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 4px solid black;
     width: 400px;
-    height: 100px;
+    height: 170px;
     .image1{
         background-image: url(/breif2/img/pizza.jpg);
-        background-size: 194px 100px;
-        width:50%;
-        height: 100px;
+        background-size: 188px 150px;
+        width: 47%;
+        height: 145px;
         background-repeat: no-repeat;
-        border-radius: 20px;
-        margin: 3px;
+        border-radius: 15px;
+        margin: 10px;
         
     }
     .paragraph1{
         background-color: $blcolor;
-        
+        height: 80px;
+        width: 73%;
     }
     .h1{
-        width: 40%;
+        align-items: center;
+        width: 49%;
         display: flex;
         flex-direction: column;
         font-size: 10px;
     }
     .image2{
         background-image: url(/breif2/img/hamburger.jpg);
-        background-size: 194px 100px;
-        width:50%;
-        height: 100px;
+        background-size: 188px 150px;
+        width: 47%;
+        height: 145px;
         background-repeat: no-repeat;
-        border-radius: 20px;
-        margin: 3px;
+        border-radius: 15px;
+        margin: 10px;
     }
     .image3{
         background-image: url(/breif2/img/Tcos.jpg);
-        background-size: 194px 100px;
-        width:50%;
-        height: 100px;
+        background-size: 188px 150px;
+        width: 47%;
+        height: 145px;
         background-repeat: no-repeat;
-        border-radius: 20px;
-        margin: 3px;
+        border-radius: 15px;
+        margin: 10px;
     }
     
 }
-
+#commander{
+    border-radius: 15px;
+    height: 50px;
+    width: 40%;
+    margin-left: 23rem;
+}
 }
 .deliver{
+    margin-top: 10px;
     background-color: #014B5D;
     opacity: 84%;
     height: 150px;
@@ -198,7 +207,7 @@ margin-left: 200px;
     &__background{
 
         justify-content: center;
-        background-color: $buttcolor;
+        background-color: rgba(249, 251, 252, 0.8);
         padding: 33px;
         width: 80%;
         height: 150px;
@@ -206,16 +215,22 @@ margin-left: 200px;
         grid-template-columns: 400px 100px;
         grid-template-rows: 100px;
         justify-content: center;
+        border-radius: 15px;
     }
     &__pizza{
         background-image: url(/breif2/img/pizza.jpg);
-        background-size: 287px 100px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 15px;
+        width: 70%;
+        height: 145px;
         background-repeat: no-repeat;
-        border-radius: 20px;
 
     }
 }
 .order{
+    background-color: white;
+    padding: 10px;
     &__background{
     position: relative;
     background-image: url(/breif2/img/drew.jpg.png);
@@ -224,8 +239,14 @@ margin-left: 200px;
     height: 308px;
         &__button{
             position: absolute;
-            top: 80%;
-            left: 45%;
+            top: 59%;
+            left: 44%;
+           
+            #order{
+            border-radius: 15px;
+            height: 50px;
+            width: 10rem;
+            }
         }
         
     }
@@ -233,9 +254,46 @@ margin-left: 200px;
 
 .footer{
     &__background{
-        background-color: $blcolor;
-        height: 300px;
+        background-image: url(/breif2/img/background-foot.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
         width: 100%;
-
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 150px 200px 150px;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+        &__head{
+            background-color: rgba(249, 251, 252, 0.8);
+            grid-area: 1/1/2/4;
+        }
+        &__card1{
+            background-color: rgba(249, 251, 252, 0.8);
+            grid-area: 2/1/3/2;
+        }
+        &__card2{
+            background-color: rgba(249, 251, 252, 0.8);
+            grid-area: 2/2/3/3;
+        }
+        &__card3{
+            background-color: rgba(249, 251, 252, 0.8);
+            grid-area: 2/3/3/4;
+        }
+        &__foot{
+            background-color: rgba(249, 251, 252, 0.8);
+            grid-area: 3/1/4/4;
+        }
     }
+    &__aboutus{
+        &__back{
+            margin: 10px;
+        background-image: url(/breif2/img/abtt.png);
+        background-size: cover;
+        background-position: center center;
+        border-radius: 15px;
+        height: 500px;
+    }
+}
 }

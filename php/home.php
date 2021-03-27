@@ -4,27 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/breif2/css/stayl.css">
+    <link rel="stylesheet" type="text/css" href="/breif2/satyl.css/stayl.css">
     <title>Food-Restaurant</title>
 </head>
 <body>
     <div class="all"></div>
-    <header class="header">
-        <div class="top">
-            <div class="left_head">
-                <p>+212 512-345-678</p>
-                <p>9:00 AM - 12:00 PM</p>
-            </div>
-            <div class="middle_head"></div>
-            <div class="bottom_head">
-                <a href="">Home</a> 
-            <a href="">Menu</a>   
-            <a href="">About</a> 
-            <a href="">Contact</a> 
-        </div>
-    </div>
-    
-</header>
+    <?php include 'head-home.php';  ?> 
 <main class="first">
     
     <div class="f_background">
@@ -111,7 +96,7 @@
     </div>
 </div>
 </div>
-<button>Commander</button>
+<button id="commander">Commander</button>
 </main>
 <main class="deliver">
         <div class="grenn">
@@ -133,16 +118,27 @@
     <main class="order">
         <div class="order__background">
             <div class="order__background__button">
-            <button>order now</button>
+            <button id="order">order now</button>
         </div>
     </div>
     
     </main>
     <footer class="footer">
         <div class="footer__background">
-            <p>zsredrftyui</p>
-            <p>zerftgh,</p>
-            <p>dzcaxnsxa</p>
+            <div class="footer__background__head">
+                <h1>Our chefs</h1>
+            </div>
+
+            <div class="footer__background__card1">
+            </div>
+            <div class="footer__background__card2"></div>
+            <div class="footer__background__card3"></div>
+            <div class="footer__background__foot">
+                <h1>About US</h1>
+            </div>
+        </div>
+        <div class="footer__aboutus">
+            <div class="footer__aboutus__back"></div>
         </div>
     </footer>
     

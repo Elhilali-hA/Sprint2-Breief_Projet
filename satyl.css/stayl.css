@@ -1,0 +1,599 @@
+body {
+  margin: 0%;
+  padding: 0%; }
+
+.all {
+  position: fixed;
+  width: 100%;
+  height: 90%;
+  background-image: url(/breif2/img/interior.jpg);
+  background-size: 1263px 700px;
+  background-repeat: no-repeat;
+  z-index: -1; }
+
+.top {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .top .middle_head {
+    background-image: url(/breif2/img/logo.png);
+    background-size: 260px 114px;
+    width: 20%;
+    height: 100px;
+    background-repeat: no-repeat; }
+  .top .left_head {
+    color: black;
+    font-size: 12px;
+    margin-left: 20px; }
+
+.first .f_background {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between; }
+  .first .f_background .opaback {
+    background-color: white;
+    opacity: 65%;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px; }
+    .first .f_background .opaback #b1 {
+      width: 150px;
+      border-radius: 15px;
+      height: 40px;
+      margin-left: 69px;
+      margin-top: 38px;
+      border: 1px solid black; }
+    .first .f_background .opaback #b2 {
+      width: 150px;
+      height: 40px;
+      border-radius: 15px;
+      margin-top: 20px;
+      margin-left: 69px;
+      border: 1px solid black; }
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: #81d3da;
+  background: radial-gradient(circle, #81d3da 0%, #8d3ffb 100%);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1; }
+  .foot__img {
+    margin-top: 20px;
+    margin-left: 10px; }
+  .foot__txt {
+    margin-top: 20px; }
+  .foot__button {
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 15px; }
+    .foot__button #b1 {
+      font-size: 15px;
+      border-radius: 15px;
+      border: 1px solid #ADD1FC;
+      background-color: #C1E8FB;
+      cursor: pointer; }
+    .foot__button #b2 {
+      font-size: 15px;
+      border-radius: 15px;
+      border: 1px solid #ADD1FC;
+      cursor: pointer; }
+
+.bac_img {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 100px 100px 100px;
+  justify-content: center;
+  row-gap: 80px;
+  column-gap: 100px; }
+  .bac_img .back_img {
+    background-color: rgba(249, 251, 252, 0.8);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    height: 170px; }
+    .bac_img .back_img .image1 {
+      background-image: url(/breif2/img/pizza.jpg);
+      background-size: 188px 150px;
+      width: 47%;
+      height: 145px;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      margin: 10px; }
+    .bac_img .back_img .paragraph1 {
+      background-color: #C1E8FB;
+      height: 80px;
+      width: 73%; }
+    .bac_img .back_img .h1 {
+      align-items: center;
+      width: 49%;
+      display: flex;
+      flex-direction: column;
+      font-size: 10px; }
+    .bac_img .back_img .image2 {
+      background-image: url(/breif2/img/hamburger.jpg);
+      background-size: 188px 150px;
+      width: 47%;
+      height: 145px;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      margin: 10px; }
+    .bac_img .back_img .image3 {
+      background-image: url(/breif2/img/Tcos.jpg);
+      background-size: 188px 150px;
+      width: 47%;
+      height: 145px;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      margin: 10px; }
+  .bac_img #commander {
+    border-radius: 15px;
+    height: 50px;
+    width: 40%;
+    margin-left: 23rem; }
+
+.deliver {
+  margin-top: 10px;
+  background-color: #014B5D;
+  opacity: 84%;
+  height: 150px; }
+  .deliver .grenn {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 40px 40px;
+    column-gap: 200px;
+    justify-content: center;
+    padding: 33px; }
+    .deliver .grenn .food {
+      background-image: url(/breif2/img/restaurant.svg);
+      background-size: 67px 38px;
+      background-repeat: no-repeat; }
+    .deliver .grenn .delivery {
+      background-image: url(/breif2/img/food-delivery.svg);
+      background-size: 67px 38px;
+      background-repeat: no-repeat; }
+    .deliver .grenn .quality {
+      background-image: url(/breif2/img/juice.svg);
+      background-size: 67px 38px;
+      background-repeat: no-repeat; }
+
+.price {
+  margin-left: 200px;
+  padding: 33px; }
+  .price__background {
+    justify-content: center;
+    background-color: rgba(249, 251, 252, 0.8);
+    padding: 33px;
+    width: 80%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 400px 100px;
+    grid-template-rows: 100px;
+    justify-content: center;
+    border-radius: 15px; }
+  .price__pizza {
+    background-image: url(/breif2/img/pizza.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+    width: 70%;
+    height: 145px;
+    background-repeat: no-repeat; }
+
+.order {
+  background-color: white;
+  padding: 10px; }
+  .order__background {
+    position: relative;
+    background-image: url(/breif2/img/drew.jpg.png);
+    background-size: 100% 306px;
+    background-repeat: no-repeat;
+    height: 308px; }
+    .order__background__button {
+      position: absolute;
+      top: 59%;
+      left: 44%; }
+      .order__background__button #order {
+        border-radius: 15px;
+        height: 50px;
+        width: 10rem; }
+
+.footer__background {
+  background-image: url(/breif2/img/background-foot.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 150px 200px 150px;
+  justify-content: center;
+  align-content: center;
+  gap: 30px; }
+  .footer__background__head {
+    background-color: rgba(249, 251, 252, 0.8);
+    grid-area: 1/1/2/4; }
+  .footer__background__card1 {
+    background-color: rgba(249, 251, 252, 0.8);
+    grid-area: 2/1/3/2; }
+  .footer__background__card2 {
+    background-color: rgba(249, 251, 252, 0.8);
+    grid-area: 2/2/3/3; }
+  .footer__background__card3 {
+    background-color: rgba(249, 251, 252, 0.8);
+    grid-area: 2/3/3/4; }
+  .footer__background__foot {
+    background-color: rgba(249, 251, 252, 0.8);
+    grid-area: 3/1/4/4; }
+
+.footer__aboutus__back {
+  margin: 10px;
+  background-image: url(/breif2/img/abtt.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  height: 500px; }
+
+.head {
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #8546fc 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .head .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .head .header__logo {
+      margin: 5px;
+      height: 98px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center; }
+      .head .header__logo .logo {
+        background-image: url(/breif2/img/log.png);
+        background-size: cover;
+        background-position: center center;
+        width: 200px;
+        height: 57px;
+        background-repeat: no-repeat; }
+      .head .header__logo .tel p {
+        font-size: 10px; }
+    .head .header .show {
+      display: grid;
+      grid-template-rows: 50px 20px;
+      grid-template-columns: 80px 80px 80px;
+      justify-content: flex-end; }
+      .head .header .show__home {
+        background-image: url(/breif2/img/home.svg);
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat; }
+      .head .header .show__contact {
+        background-image: url(/breif2/img/contact.svg);
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat; }
+      .head .header .show__About {
+        background-image: url(/breif2/img/About.svg);
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat; }
+      .head .header .show #txt {
+        font-size: 12px;
+        color: #000; }
+
+.background {
+  position: relative;
+  background-image: url(/breif2/img/interior.jpg);
+  background-size: 1280px 900px;
+  width: 100%;
+  height: 610px;
+  opacity: 0.5;
+  z-index: -1; }
+
+.backopa {
+  display: grid;
+  grid-template-columns: 500px;
+  grid-template-rows: 200px 60px 50px;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: 26%;
+  background-color: rgba(8, 50, 112, 0.397);
+  width: 600px;
+  height: 500px;
+  border-radius: 15px; }
+  .backopa__logo {
+    justify-content: center;
+    background-image: url(/breif2/img/logo.png);
+    background-size: 306px 198px;
+    width: 230px;
+    height: 172px;
+    background-repeat: no-repeat;
+    margin-left: 100px; }
+  .backopa__user {
+    display: flex;
+    justify-content: center; }
+  .backopa__pass {
+    display: flex;
+    justify-content: center; }
+  .backopa__button {
+    justify-self: center; }
+  .backopa #but:hover {
+    opacity: 1; }
+  .backopa p {
+    font-size: 13px;
+    text-decoration: underline;
+    color: white;
+    margin-left: 40px; }
+  .backopa #but {
+    margin-top: 25px;
+    margin-left: 169px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    background-color: blue;
+    border: none; }
+  .backopa input {
+    opacity: 0.6;
+    margin-left: 5px;
+    height: 40px;
+    margin-top: 2px; }
+  .backopa .icon-user {
+    background-image: url(/breif2/img/user1.svg);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat; }
+  .backopa .icon-pass {
+    background-image: url(/breif2/img/key.svg);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat; }
+
+.fixed {
+  background-color: #C1E8FB;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  .fixed__left {
+    margin-top: -20px;
+    background-image: url(breif2/img/logo.png);
+    background-size: 196px 144px;
+    width: 207px;
+    height: 125px;
+    background-repeat: no-repeat; }
+  .fixed__middle {
+    margin-top: 30px;
+    text-decoration: none; }
+  .fixed__right {
+    margin: 10px;
+    background-image: url(breif2/img/user-profil.svg);
+    background-size: 33px 50px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat; }
+
+.photo {
+  background-image: url(breif2/img/pizza.jpg);
+  background-size: 1160px 246px;
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  margin-left: 50px;
+  border-radius: 15px; }
+
+.points {
+  display: flex;
+  width: 200px;
+  height: 120px; }
+  .points__point1 {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 12px; }
+  .points__point2 {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 12px; }
+  .points__point3 {
+    background-color: #050505;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 12px; }
+  .points__point4 {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 12px; }
+  .points__point5 {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 12px;
+    color: black; }
+
+.background {
+  position: relative;
+  background-image: url(/breif2/img/interior.jpg);
+  background-size: 1280px 900px;
+  width: 100%;
+  height: 610px;
+  opacity: 0.5;
+  z-index: -1; }
+
+.opacityback {
+  display: grid;
+  grid-template-columns: 500px;
+  grid-template-rows: 200px 60px 50px;
+  justify-content: center;
+  position: absolute;
+  top: 30px;
+  left: 20%;
+  background-color: rgba(8, 50, 112, 0.397);
+  width: 800px;
+  height: 500px;
+  border-radius: 15px; }
+  .opacityback__logo {
+    justify-content: center;
+    background-image: url(/breif2/img/logo.png);
+    background-size: 306px 198px;
+    width: 230px;
+    height: 172px;
+    background-repeat: no-repeat;
+    margin-left: 100px; }
+  .opacityback__button #but:hover {
+    opacity: 1; }
+  .opacityback__button #but {
+    margin-top: 25px;
+    margin-left: 154px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    background-color: blue;
+    border: none; }
+  .opacityback #fichier {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    color: black;
+    background-color: gray; }
+
+body {
+  position: relative;
+  background-image: url(/breif2/img/interior.jpg);
+  background-size: 1280px 900px;
+  width: 100%;
+  height: 610px; }
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 20px;
+  width: 94%; }
+  .content__table {
+    margin-left: 5px;
+    background-color: #b6c4f1;
+    height: 80px;
+    width: 65%;
+    border: 1px solid black; }
+    .content__table .title {
+      width: 90%;
+      margin: 20px; }
+      .content__table .title tr {
+        height: 40px;
+        border: 2px solid black; }
+        .content__table .title tr th {
+          border: 2px solid black; }
+  .content__left {
+    width: 15%;
+    background: #81d3da;
+    background: radial-gradient(circle, #81d3da 0%, #8d3ffb 100%);
+    height: 400px;
+    padding: 20px; }
+
+.image .body {
+  background-image: url(/breif2/img/interior.jpg);
+  background-size: 1280px 900px;
+  width: 100%;
+  height: 510px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  display: flex;
+  justify-content: space-around; }
+  .image .body .password {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px; }
+  .image .body .profil {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 15px; }
+
+.head {
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 0%, #8546fc 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .head .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .head .header__logo {
+      margin: 5px;
+      height: 98px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center; }
+      .head .header__logo .logo {
+        background-image: url(/breif2/img/log.png);
+        background-size: cover;
+        background-position: center center;
+        width: 200px;
+        height: 57px;
+        background-repeat: no-repeat; }
+      .head .header__logo .tel p {
+        font-size: 10px; }
+    .head .header .show {
+      display: grid;
+      grid-template-rows: 50px 20px;
+      grid-template-columns: 80px 80px 80px;
+      justify-content: flex-end; }
+      .head .header .show__profil {
+        background-image: url(/breif2/img/user.svg);
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat; }
+      .head .header .show__menu {
+        background-image: url(/breif2/img/menu.svg);
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat; }
+      .head .header .show__user {
+        background-image: url(/breif2/img/group.svg);
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat; }
+      .head .header .show #txt {
+        font-size: 12px;
+        color: #000; }

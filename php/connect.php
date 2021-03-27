@@ -8,7 +8,7 @@
     $result=mysqli_query($conn,$query);
     $count=mysqli_num_rows($result);
     if($count>0){
-        header('location:home.php');
+        header('location:profile.php');
 
     }else{
         echo"login not success";
