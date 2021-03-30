@@ -1,78 +1,137 @@
 // menu
-.fixed{
-    background-color: #C1E8FB;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    &__left{
-        margin-top: -20px;
-        background-image: url(breif2/img/logo.png);
-        background-size: 196px 144px;
-        width: 207px;
-        height: 125px;
-        background-repeat: no-repeat;
-    }
-    &__middle{
-        margin-top: 30px;
-        text-decoration: none;
-    }
-    &__right{
-        margin: 10px;
-        background-image: url(breif2/img/user-profil.svg);
-        background-size: 33px 50px;
-         width: 50px;
-         height: 50px;
-         background-repeat: no-repeat;
-    }
+@import "scss/variable";
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
 }
-.photo{
-    background-image: url(breif2/img/pizza.jpg);
-    background-size: 1160px 246px;
+.all{
+    position: fixed;
     width: 100%;
-    height: 250px;
+    height: 90%;
+    background-image: url(/breif2/img/interior.jpg);
+    background-size: 1263px 700px;
     background-repeat: no-repeat;
-    margin-left: 50px;
-    border-radius: 15px;
+    z-index: -1;
+
 }
-.points{
+.top{
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+    height: 80px;
+    width: 77%;
     display: flex;
-    width: 200px;
-    height: 120px;
-    &__point1{
-        background-color: white;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-left: 12px;
+    h1{
+        margin-left: 10px;
+        width: 30%;
+        color: blue;
     }
-    &__point2{
-        background-color: white;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-left: 12px;
+    .search{
+        margin-top: 15px;
+        height: 40px;
+        width: 62%;
+        display: flex;
+        input{
+            border: 0.4px solid black;
+            width: 60%;
+            height: 40px;
+            border-radius: 15px;
+        }
+        .contact{
+            background-color: rgb(78, 165, 78);
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            border-radius: 50%;
+            border: 1px solid black;
+            cursor: pointer;
+            .tele{
+                margin-left: 2px;
+                background-image: url(/breif2/img/telephone.png);
+                background-size: cover;
+                height: 20px;
+                width: 20px;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+        }
     }
-    &__point3{
-        background-color: rgb(5, 5, 5);
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-left: 12px;
+}
+.commande{
+    background-color: white;
+    border-radius: 15px;
+    width: 20%;
+    height: 500px;
+    position: fixed;
+    right: 0;
+    top: 108px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+      
+    h1{
+        margin-left: 40px;
     }
-    &__point4{
-        background-color: white;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-left: 12px;
+    .passer{
+        width: 100%;
+        margin-left: 40px;
+        margin-top: 200px;
+        .pcommande{
+            width: 80%;
+            height: 60px;
+            border-radius: 15px;
+            background: $Color;
+            color:#fff;
+            cursor: pointer;
+        }
     }
-    &__point5{
-        background-color: white;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-left: 12px;
-        color: black;
-    }
+}
+.b_img{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: auto;
+    row-gap: 30px;
+    column-gap: 100px;
+    margin-left: 12px;
+  .back_img{
+      background-color: rgba(249, 251, 252, 0.8);
+      border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  height: 140px;
+  .image1{
+      background-image: url(/breif2/img/pizza.jpg);
+      background-size: 188px 150px;
+      width: 47%;
+      height: 125px;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      margin: 10px;
+      
+  }
+  .paragraph1{
+      
+      p{
+          font-size: 20px;
+      }
+  }
+  .h1{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+  }
+  .image2{
+      background-image: url(/breif2/img/hamburger.jpg);
+      background-size: 188px 150px;
+      width: 47%;
+      height: 125px;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      margin: 10px;
+  }
+  
+  
+ }
 }

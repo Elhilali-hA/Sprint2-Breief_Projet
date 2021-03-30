@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,30 +13,37 @@
 <div class="opacityback">
     <div class="opacityback__logo"></div>
    
-     <form action="add.php" method="POST"> 
+     
      <div class="opacityback__product">
-     <label for="">ID :</label>
-       <input type="text" name="ID" placeholder="ID" size="40" style="margin-left: 80px;margin-top:10px">
+
+     <form action="add.php" method="post" enctype="multipart/form-data">  
+
+     <label for="">Code :</label>
+       <input type="text" name="Code" placeholder="ID" size="40" style="margin-left: 80px;margin-top:10px">
     </div>
+
     <div class="opacityback__product">
        <label for="">Product Name :</label>
-        <input type="text" name="Product" placeholder="Product name" size="40" style="margin-left: 5px;margin-top:10px">
+        <input type="text" name="Name" placeholder="Product name" size="40" style="margin-left: 5px;margin-top:10px">
     </div>
+
     <div class="opacityback__product">
    <label for="">img location :</label>
-   <button name="fichier" style="margin-left: 10px;margin-top:10px">choisir un fichier</button>
+   <input type="file" name="image" style="margin-top: 20px;margin-left: 35px;"size="40">
     </div>
+
     <div class="opacityback__product">
    <label for="">Price :</label>
-       <input type="text" name="price" placeholder="price" size="40" style="margin-left: 65px;margin-top:10px">
+       <input type="text" name="Price" placeholder="price" size="40" style="margin-left: 65px;margin-top:10px">
     </div>
 
     <div class="opacityback__button">
-     <button id="but" style="color: white;" name="Add">Add</button>
+     <button id="but" type="submit" style="color: white;" name="Add">Add</button>
     </div>
 
-
 </form>
+
+
 </div>
 </body>
 </html>

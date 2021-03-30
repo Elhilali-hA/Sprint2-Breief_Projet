@@ -8,37 +8,73 @@ body{
    width: 100%;
    height: 610px;
 }
-.content{
-    @include display-reverse();
-    margin: 20px;
-    width: 94%;
- &__table{
-     margin-left: 5px;
-     background-color: rgb(182, 196, 241);
-     height: 80px;
-     width: 65%;
-     border: 1px solid black;
-     .title{
-        width: 90%;
-         margin: 20px;
-         tr{
-         height: 40px;  
-         border: 2px solid black;
-         th{
-             border: 2px solid black;
-         }
-     }
+.alt{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    .topp{
+        margin: 10px;
+        border-radius: 15px;
+        background-color: white;
+        height: 80px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            margin-left: 10px;
+            width: 30%;
+            color: blue;
+        }
+        .searchh{
+            margin-top: 15px;
+            height: 40px;
+            width: 50%;
+            input{
+                border: 0.4px solid black;
+                width: 50%;
+                height: 40px;
+                border-radius: 15px;
+            }
+            .add{
+                background-color: rgb(78, 165, 78);
+                width: 40px;
+                height: 40px;
+                margin-left: 10px;
+                border-radius: 50%;
+                border: 1px solid black;
+                cursor: pointer;
+                .plus{
+                    margin-left: 3px;
+                    background-image: url(/breif2/img/add.png);
+                    background-size: cover;
+                    height: 20px;
+                    width: 20px;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+            }
+        }
+            
         
-     }
- 
     }
-    &__left{
-        width: 15%;
-        background: rgb(129,211,218);
-background: radial-gradient(circle, rgba(129,211,218,1) 0%, rgba(141,63,251,1) 100%);
-        height: 400px;
-        padding: 20px;
-        
     
-} 
+    table{
+        
+        padding: 20px;
+        width: 80%;
+        tr{
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            th{
+                background-color: rgba(255, 255, 255, 0.383);
+                width: 15%;
+                border: 1.5px solid blue;
+                color:#000;
+            }
+        }
+    }
+    
 }
+    
+    

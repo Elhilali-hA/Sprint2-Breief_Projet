@@ -28,7 +28,24 @@
 
     <div class="backopa__button">
      <button id="but" style="color: white;" name="login">Login</button>
-        <p> Don't have an account ?</p>
+     <?php 
+                        if(@$_GET['vide']==true)
+                        {
+                    ?>
+                        <div class="alert"><?php echo $_GET['vide'] ?></div>
+                    <?php
+                        }
+                    ?>
+
+                    <?php 
+                        if(@$_GET['incorrect']==true)
+                        {
+                    ?>
+                        <div class="alert"><?php echo $_GET['incorrect'] ?></div>
+                    <?php
+                        }
+                    ?>
+      <a href="">  <p> Don't have an account ?</p></a>
     </div>
 
 

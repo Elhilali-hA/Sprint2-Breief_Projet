@@ -1,0 +1,22 @@
+.input{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    #changer{
+        margin-top: 25px;
+        margin-left: 120px;
+        color: white;
+        opacity: 0.8;
+        cursor: pointer;
+        border-radius: 15px;
+        width: 200px;
+        height: 30px;
+        background-color: blue;
+        border: none;
+    }
+}
