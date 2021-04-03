@@ -19,22 +19,21 @@
 //     }
 // }
 function searchbar() {
-    var input, filter, div, h1, i, txtValue;
+    var input, filter, x, i, h1;
     input = document.getElementById("search");
     filter = input.value.toUpperCase();
-    div = document.getElementById("div");
-     h1 = div.getElementsByTagName("h1");
+    x = document.getElementsByClassName("back_img");
     
 
 
-    for(i=0 ; i< h1.length; i++){
-        txtValue = h1[i].textContent || h1[i].innerText;
-        if(txtValue.toUpperCase().indexOf(filter) > -1){
-            h1[i].style.display = "div";
+    for(i=0 ; i< x.length; i++){
+        h1 = x[i].getElementsByTagName('h1')[0];
+        if(x[i].innerHTML.toUpperCase().includes(filter)){
+            x[i].style.display = "";
         }
 
         else{
-            h1[i].style.display = 'none';
+            x[i].style.display = "none";
         }
     }
 }

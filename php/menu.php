@@ -32,7 +32,7 @@ $req=mysqli_query($conn,$query);
     <div class="top">
         <h1>Food-restaurant</h1>
         <div class="search">
-            <div><input id="search" onkeyup="searchbar()" autocomplete="off" type="text" placeholder="Rechercher un plat" size="50">
+            <div><input id="search" onkeyup="searchbar()" autocomplete="off" type="search" placeholder="Rechercher un plat" size="50">
         <a href=""> <i class="fas fa-search"></i></a></div>
         
        <div class="contact"><div class="tel"></div><span style="font-size: 12px;" class="tooltiptext">+212 512-345-678</span></div>

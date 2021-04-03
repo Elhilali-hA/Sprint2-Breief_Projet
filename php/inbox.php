@@ -49,7 +49,7 @@ $req=mysqli_query($conn,$query);
        <td> <?php echo $row["phone"]; ?> </td>
        <td><p> <?php echo $row["message"]; ?></p> </td>
 
-       <td><button type="submit" name="Delete"><a onclick="return confirm('are you sure')" href="deletemsg.php?Code=<?php echo $row["id"];?>"> Delete </a> </button> </td>
+       <td><button type="submit" name="Delete"><a onclick="return confirm('are you sure')" href="deletemsg.php?id=<?php echo $row["id"];?>"> Delete </a> </button> </td>
        
      </tr>
 

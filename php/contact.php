@@ -9,7 +9,7 @@
     <title>Contact us</title>
 </head>
 <body>
-  <?php include 'head-home.php';  ?> 
+  <?php include 'head-menu.php';  ?>  
   <form action="insert.php" method="POST">
   <div class="leftside">
   <h1>Contact Us</h1>

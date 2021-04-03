@@ -30,7 +30,7 @@ $req=mysqli_query($conn,$query);
         <h1>Food-restaurant</h1>
         <div class="searchh">
           <div>
-        <input id="search" onkeyup="searchbar()" name="search" autocomplete="off" type="text" placeholder="Rechercher un plat" size="50">
+        <input id="search" onkeyup="searchbar()" name="search" autocomplete="off" type="search" placeholder="Rechercher un plat" size="50">
         
       </div>
 
