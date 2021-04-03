@@ -7,11 +7,11 @@
           
         <div class="header__head show">
           <a href="home.php"> <div class="show__home"></div></a>
-        <a href="Menu"> <div class="show__contact"></div></a>
-         <a href="Users"><div class="show__About"></div></a>
+        <a href="contact.php"> <div class="show__contact"></div></a>
+         <a href="#about"><div class="show__About"></div></a>
                <div> <a id="txt" href="home.php" style="text-decoration: none;">Home</a> </div>
-               <div> <a id="txt" href="contact" style="text-decoration: none;">Contact</a></div>
-               <div> <a  id="txt" href="About" style="text-decoration: none;">About Us</a></div>
+               <div> <a id="txt" href="contact.php" style="text-decoration: none;">Contact</a></div>
+               <div> <a  id="txt" href="#about" style="text-decoration: none;">About Us</a></div>
         </div>
     </div>
     </header>

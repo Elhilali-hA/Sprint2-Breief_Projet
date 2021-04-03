@@ -4,7 +4,10 @@ $code = isset($_GET["Code"])?$_GET["Code"]:0;
 $conn = mysqli_connect("localhost","root", "", "food");
 $query="SELECT * FROM products where Code=$code";
 $req=mysqli_query($conn,$query);
-$row = mysqli_fetch_array($req)
+$row = mysqli_fetch_array($req);
+
+session_start();
+    include('user.php');
 
 ?>
 
@@ -16,6 +19,8 @@ $row = mysqli_fetch_array($req)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/breif2/satyl.css/stayl.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap" rel="stylesheet">
     <title>Product</title>
   </head>
   <body>
@@ -26,7 +31,7 @@ $row = mysqli_fetch_array($req)
         <h1>Food-restaurant</h1>
         <div class="searchh">
         <input type="text" placeholder="Rechercher un plat" size="50">
-      
+        
     </div>
     </div>
     </div>
@@ -43,7 +48,7 @@ $row = mysqli_fetch_array($req)
    <div>
    <label for="fname">image:</label> <input type="file" name="image" style="margin-top: 20px;margin-left: 35px;"size="40" value="<?php echo $row["image"] ?>">
    </div>
-   <button id="changer" type="submit" name="spass">Modify</button>
+   <button id="changer" type="submit" name="spass">Update</button>
 </form>
 
 

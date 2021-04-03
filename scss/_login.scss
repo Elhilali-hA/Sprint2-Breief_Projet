@@ -1,4 +1,7 @@
 // login
+body{
+  font-family: 'Bai Jamjuree', sans-serif;   
+}
 .background{
     position: relative;
     background-image: url(/breif2/img/interior.jpg);
@@ -11,7 +14,7 @@
 .backopa{
     display: grid;
     grid-template-columns: 500px;
-    grid-template-rows: 200px 60px 50px;
+    grid-template-rows: 120px 100px 60px 50px;
     justify-content: center;
     position: absolute;
     top: 30px;
@@ -20,36 +23,37 @@
     width: 600px;
     height: 500px;
     border-radius: 15px;
-    &__logo{
+    .backopa__logo{
         justify-content: center;
-        background-image: url(/breif2/img/logo.png);
+        background-image: url(/breif2/img/log.png);
         background-size: 306px 198px;
-        width: 230px;
-        height: 172px;
+        height: 122px;
          background-repeat: no-repeat;
          margin-left: 100px;
 
     }
-    &__user{
+    h1{
+        text-align: center;
+    }
+    .backopa__user{
         display: flex;
         justify-content: center;
+        margin: 12px;
         
     }
-    &__pass{
+    .backopa__pass{
         display: flex;
         justify-content: center;
     }
-    &__button{
+    .backopa__button{
         justify-self: center;
+        
     }
     #but:hover{
         opacity: 1;
     }
     p{
-        font-size: 13px;
-        text-decoration: underline;
-        color: white;
-        margin-left: 40px;
+        font-size: 12px;
     }
     #but{
         margin-top: 25px;
@@ -59,7 +63,7 @@
         border-radius: 15px;
         width: 200px;
         height: 30px;
-        background-color: blue;
+        background-color: chocolate;
         border: none;
     }
     input{
@@ -83,13 +87,13 @@
          height: 50px;
          background-repeat: no-repeat;
         }
-        // .alert{
-        //     margin-top: 12px ;
-        //     margin-left: 9rem;
-        //     border-radius: 15px;
-        //     background-color: rgb(255, 255, 255);
-        //     width: 50%;
-        //     height: 30px;
-        //     text-align: center;
-        // }
+        .alert{
+            margin-top: 12px ;
+            margin-left: 9rem;
+            border-radius: 15px;
+            background-color: rgba(252, 1, 1, 0.76);
+            width: 50%;
+            height: 30px;
+            text-align: center;
+        }
 }

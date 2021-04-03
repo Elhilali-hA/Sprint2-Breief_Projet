@@ -1,8 +1,15 @@
 <?php
-$conn = mysqli_connect("localhost","root", "", "food");
-$query="SELECT * FROM admin";
-$req=mysqli_query($conn,$query);
+session_start();
+    include('user.php');
+     
+    if(isset(  $_SESSION['User'])){
 
+       $var =$_SESSION['User'];
+        $conn = mysqli_connect("localhost","root", "", "food");
+        $query="SELECT * FROM admin  where pseudo ='$var'";
+        $req=mysqli_query($conn,$query);
+    }
+        
 
 ?>
 
@@ -14,6 +21,9 @@ $req=mysqli_query($conn,$query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/breif2/satyl.css/stayl.css">
+    <script src="https://kit.fontawesome.com/5891d200cb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -41,7 +51,7 @@ $req=mysqli_query($conn,$query);
         <div>
         <label for="fname">Email:</label> <input type="text" name="email" disabled style="margin-top: 20px;margin-left: 30px;"size="40" value="<?php echo $row["Email"]; ?>">
         <div>
-        <label for="fname">password:</label> <input type="text" name="paswword" disabled style="margin-top: 20px;margin-left: 10px;"size="40" value="<?php echo $row["password"]; ?>"></div>
+        <label for="fname">password:</label> <input type="password" name="paswword" disabled style="margin-top: 20px;margin-left: 10px;"size="40" value="<?php echo $row["password"] ; ?>"></div>
 </main>
 
 <?php
@@ -55,25 +65,28 @@ $req=mysqli_query($conn,$query);
 
 
 
+<div>
 
-<form method=post>
+</div>
     <main class="password"> 
+<form method="post" action="pass.php">
         <h2>Change Password:</h2>
         <div>
-        <label for="fname">password:</label> <input type="password" name="password" style="margin-top: 20px;margin-left: 60px;">
+        <label for="fname">password:</label> <input type="password" name="currentpassword" style="margin-top: 20px;margin-left: 60px;">
     </div>
     <div>
-        <label for="fname">New password:</label> <input type="password" name="n_password" style="margin-top: 20px;margin-left: 30px;">
+        <label for="fname">New password:</label> <input type="password" name="newpassword" style="margin-top: 20px;margin-left: 30px;">
     </div>
         <div class="password__butt">
-         <label for="fname">Comfirm password:</label> <input type="password" name="c_password" style="margin-top: 20px;">  
-       <button id="changer" type="submit" name="spass">changer</button>
+         <label for="fname">Comfirm password:</label> <input type="password" name="confirmpassword" style="margin-top: 20px;">  
+       <button id="changer" type="submit" name="change">changer</button>
         </div>
+</form>
     </main>
 </main>
 
 
-</form>
+
 
 
 

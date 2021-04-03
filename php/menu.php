@@ -4,10 +4,6 @@ $query="SELECT * FROM products";
 $req=mysqli_query($conn,$query);
 
 
-
-
-
-
 ?>
 
 
@@ -22,18 +18,24 @@ $req=mysqli_query($conn,$query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/breif2/satyl.css/stayl.css">
+    <script src="https://kit.fontawesome.com/5891d200cb.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Menu</title>
 </head>
 <body>
-   <?php include 'head-home.php';  ?> 
+   <?php include 'head-menu.php';  ?> 
+
+   <script type="text/javascript" src="search-menu.js"></script>
+
 <div class="all"></div>
     <div class="top">
         <h1>Food-restaurant</h1>
         <div class="search">
-        <input type="text" placeholder="Rechercher un plat" size="50">
-       <a href=""><button class="contact"><div class="tele"></div></button></a>
+            <div><input id="search" onkeyup="searchbar()" autocomplete="off" type="text" placeholder="Rechercher un plat" size="50">
+        <a href=""> <i class="fas fa-search"></i></a></div>
+        
+       <div class="contact"><div class="tel"></div><span style="font-size: 12px;" class="tooltiptext">+212 512-345-678</span></div>
         </div>
     </div>
     <div class="commande">
@@ -52,7 +54,7 @@ $req=mysqli_query($conn,$query);
 
 
 
-    <main class="b_img">
+    <main class="b_img" id="grid">
 
     <?php 
 
@@ -60,10 +62,10 @@ $req=mysqli_query($conn,$query);
 while ($row = mysqli_fetch_array($req))
 {
 ?>
- <div class="back_img">
+ <div class="back_img" id="div">
     <img class="image1" src="../img/<?php echo $row["image"]; ?>" alt="">
-    <div class="h1">
-        <h1><?php echo $row["Name"];?></h1>
+    <div class="h1" id="title">
+        <h1 id="title"><?php echo $row["Name"];?></h1>
         <div class="paragraph1">
             <p><?php echo $row["Price"] .'Dh' ;?></p>
     </div>

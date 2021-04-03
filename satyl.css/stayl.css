@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0%;
   padding: 0%;
@@ -10,87 +13,65 @@ body {
   background-image: url(/breif2/img/interior.jpg);
   background-size: 1263px 700px;
   background-repeat: no-repeat;
-  z-index: -1; }
-
-.top {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-  .top .middle_head {
-    background-image: url(/breif2/img/logo.png);
-    background-size: 260px 114px;
-    width: 20%;
-    height: 100px;
-    background-repeat: no-repeat; }
-  .top .left_head {
-    color: black;
-    font-size: 12px;
-    margin-left: 20px; }
-
-.first .f_background {
-  padding: 100px;
-  display: flex;
-  justify-content: space-between; }
-  .first .f_background .opaback {
-    background-color: white;
-    opacity: 65%;
-    width: 300px;
-    height: 200px;
-    border-radius: 15px; }
-    .first .f_background .opaback #b1 {
-      width: 150px;
-      border-radius: 15px;
-      height: 40px;
-      margin-left: 69px;
-      margin-top: 38px;
-      border: 1px solid black; }
-    .first .f_background .opaback #b2 {
-      width: 150px;
-      height: 40px;
-      border-radius: 15px;
-      margin-top: 20px;
-      margin-left: 69px;
-      border: 1px solid black; }
+  z-index: -2; }
 
 .foot {
   position: fixed;
   bottom: 0;
   right: 0;
   width: 100%;
-  background: #81d3da;
-  background: radial-gradient(circle, #81d3da 0%, #8d3ffb 100%);
+  height: auto;
+  background: #343a40;
   height: 60px;
   display: flex;
   justify-content: space-between;
   z-index: 1; }
-  .foot__img {
-    margin-top: 20px;
+  .foot .foot__img {
+    margin-top: 12px;
     margin-left: 10px; }
+    .foot .foot__img .fab fa-facebook {
+      margin-top: 1rem;
+      cursor: pointer; }
+    .foot .foot__img .fab fa-twitter {
+      color: #fff; }
+    .foot .foot__img .fab fa-instagram {
+      color: #fff; }
+    .foot .foot__img i {
+      margin: 0.5rem;
+      color: #fff; }
   .foot__txt {
-    font-size: 14px;
-    text-decoration: none;
-    margin-top: 20px; }
-  .foot__button {
+    margin: 10px; }
+    .foot__txt a {
+      text-decoration: none;
+      font-size: 1.7rem;
+      margin: 0.5rem;
+      font-weight: bold;
+      color: orangered; }
+  .foot .foot__button {
     margin-top: 20px;
     margin-right: 10px;
     border-radius: 15px; }
-    .foot__button #b1 {
+    .foot .foot__button #b2 {
       font-size: 15px;
+      width: 5rem;
+      height: 40px;
       border-radius: 15px;
-      border: 1px solid radial-gradient(circle, #3f5efb 0%, #8546fc 100%);
-      background-color: #C1E8FB;
+      margin-top: -10px;
+      border: 1px solid black;
       cursor: pointer; }
-    .foot__button #b2 {
-      font-size: 15px;
-      border-radius: 15px;
-      border: 1px solid radial-gradient(circle, #3f5efb 0%, #8546fc 100%);
-      cursor: pointer; }
+      .foot .foot__button #b2 p {
+        font-size: 10px; }
+
+.welcome {
+  text-align: center;
+  margin: 10px;
+  color: white; }
 
 .bac_img {
+  margin: 20px;
   display: grid;
   grid-template-columns: 400px 400px;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-rows: auto;
   justify-content: center;
   row-gap: 80px;
   column-gap: 100px; }
@@ -103,7 +84,6 @@ body {
     width: 400px;
     height: 170px; }
     .bac_img .back_img .image1 {
-      background-image: url(/breif2/img/pizza.jpg);
       background-size: 188px 150px;
       width: 47%;
       height: 145px;
@@ -135,11 +115,20 @@ body {
       background-repeat: no-repeat;
       border-radius: 15px;
       margin: 10px; }
-  .bac_img #commander {
-    border-radius: 15px;
-    height: 50px;
-    width: 40%;
-    margin-left: 23rem; }
+
+#commander {
+  border-radius: 15px;
+  height: 50px;
+  width: 40%;
+  border: none;
+  color: #fff;
+  background-color: chocolate;
+  margin-left: 23rem;
+  cursor: pointer;
+  transition: 0.5s; }
+
+#commander:hover {
+  background-color: rgba(210, 105, 30, 0.801); }
 
 .deliver {
   margin-top: 10px;
@@ -214,21 +203,29 @@ body {
     grid-area: 2/1/3/2;
     background-size: cover;
     background-position: center center; }
+  .footer__background__card1:hover {
+    transform: scale(1.2); }
   .footer__background__card2 {
     background-image: url(/breif2/img/young-cook.jpg);
     grid-area: 2/2/3/3;
     background-size: cover;
     background-position: center center; }
+  .footer__background__card2:hover {
+    transform: scale(1.2); }
   .footer__background__card3 {
     background-image: url(/breif2/img/maid.jpg);
     grid-area: 2/3/3/4;
     background-size: cover;
     background-position: center center; }
+  .footer__background__card3:hover {
+    transform: scale(1.2); }
   .footer__background__card4 {
     background-image: url(/breif2/img/delivery-man.jpg);
     grid-area: 2/4/3/5;
     background-size: cover;
     background-position: center center; }
+  .footer__background__card4:hover {
+    transform: scale(1.2); }
   .footer__background__foot1 {
     background-color: rgba(249, 251, 252, 0.8);
     grid-area: 3/1/4/2; }
@@ -257,23 +254,29 @@ body {
 .footer__aboutus {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: auto;
   background-color: rgba(255, 255, 255, 0.623); }
+  .footer__aboutus__backcolr {
+    background-color: rgba(210, 105, 30, 0.808);
+    border-bottom-right-radius: 7rem;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0; }
   .footer__aboutus__back {
     position: absolute;
-    left: 50px;
-    top: 20px;
+    top: 8rem;
+    left: 4rem;
     width: 90%;
     background-image: url(/breif2/img/abtt.png);
     background-size: cover;
     background-position: center center;
-    border-radius: 15px;
-    height: 400px;
+    border-radius: 30px;
+    height: 500px;
     background-repeat: no-repeat; }
 
 .head {
-  background: #3f5efb;
-  background: radial-gradient(circle, #3f5efb 0%, #8546fc 100%);
+  background: #343a40;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -296,6 +299,7 @@ body {
         height: 57px;
         background-repeat: no-repeat; }
       .head .header__logo .tel p {
+        color: #fff;
         font-size: 10px; }
     .head .header .show {
       display: grid;
@@ -322,7 +326,10 @@ body {
         background-repeat: no-repeat; }
       .head .header .show #txt {
         font-size: 12px;
-        color: #000; }
+        color: #fff; }
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif; }
 
 .background {
   position: relative;
@@ -336,7 +343,7 @@ body {
 .backopa {
   display: grid;
   grid-template-columns: 500px;
-  grid-template-rows: 200px 60px 50px;
+  grid-template-rows: 120px 100px 60px 50px;
   justify-content: center;
   position: absolute;
   top: 30px;
@@ -345,29 +352,28 @@ body {
   width: 600px;
   height: 500px;
   border-radius: 15px; }
-  .backopa__logo {
+  .backopa .backopa__logo {
     justify-content: center;
-    background-image: url(/breif2/img/logo.png);
+    background-image: url(/breif2/img/log.png);
     background-size: 306px 198px;
-    width: 230px;
-    height: 172px;
+    height: 122px;
     background-repeat: no-repeat;
     margin-left: 100px; }
-  .backopa__user {
+  .backopa h1 {
+    text-align: center; }
+  .backopa .backopa__user {
+    display: flex;
+    justify-content: center;
+    margin: 12px; }
+  .backopa .backopa__pass {
     display: flex;
     justify-content: center; }
-  .backopa__pass {
-    display: flex;
-    justify-content: center; }
-  .backopa__button {
+  .backopa .backopa__button {
     justify-self: center; }
   .backopa #but:hover {
     opacity: 1; }
   .backopa p {
-    font-size: 13px;
-    text-decoration: underline;
-    color: white;
-    margin-left: 40px; }
+    font-size: 12px; }
   .backopa #but {
     margin-top: 25px;
     margin-left: 169px;
@@ -376,7 +382,7 @@ body {
     border-radius: 15px;
     width: 200px;
     height: 30px;
-    background-color: blue;
+    background-color: chocolate;
     border: none; }
   .backopa input {
     opacity: 0.6;
@@ -395,6 +401,14 @@ body {
     width: 50px;
     height: 50px;
     background-repeat: no-repeat; }
+  .backopa .alert {
+    margin-top: 12px;
+    margin-left: 9rem;
+    border-radius: 15px;
+    background-color: rgba(252, 1, 1, 0.76);
+    width: 50%;
+    height: 30px;
+    text-align: center; }
 
 body {
   font-family: 'Bai Jamjuree', sans-serif; }
@@ -414,37 +428,59 @@ body {
   background-color: white;
   height: 80px;
   width: 77%;
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
   .top h1 {
-    margin-left: 10px;
-    width: 30%;
-    color: blue; }
+    margin-left: 2rem;
+    color: chocolate; }
   .top .search {
-    margin-top: 15px;
-    height: 40px;
-    width: 62%;
-    display: flex; }
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly; }
     .top .search input {
       border: 0.4px solid black;
-      width: 60%;
+      width: 80%;
       height: 40px;
       border-radius: 15px; }
+    .top .search i {
+      margin-left: -2rem; }
+    .top .search .fas fa-search {
+      margin-top: 1rem;
+      cursor: pointer; }
     .top .search .contact {
-      background-color: #4ea54e;
+      position: relative;
+      display: inline-block;
+      background-color: chocolate;
       width: 40px;
       height: 40px;
-      margin-left: 10px;
       border-radius: 50%;
       border: 1px solid black;
-      cursor: pointer; }
-      .top .search .contact .tele {
-        margin-left: 2px;
-        background-image: url(/breif2/img/telephone.png);
-        background-size: cover;
-        height: 20px;
-        width: 20px;
+      cursor: pointer;
+      margin: 0 1rem; }
+      .top .search .contact .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        left: -37px;
+        top: 43px;
+        z-index: 1; }
+      .top .search .contact .tel {
+        margin: 9px 6px;
+        background-image: url(/breif2/img/phone-call.svg);
+        background-size: 25px 21px;
+        height: 30px;
+        width: 30px;
         background-repeat: no-repeat;
         cursor: pointer; }
+    .top .search .contact:hover {
+      background-color: rgba(210, 105, 30, 0.856); }
+      .top .search .contact:hover .tooltiptext {
+        visibility: visible; }
 
 .commande {
   background-color: white;
@@ -467,9 +503,12 @@ body {
       width: 80%;
       height: 60px;
       border-radius: 15px;
-      background: radial-gradient(circle, #3f5efb 0%, #8546fc 100%);
       color: #fff;
+      border: none;
+      background: chocolate;
       cursor: pointer; }
+    .commande .passer .pcommande:hover {
+      background: rgba(210, 105, 30, 0.925); }
 
 .b_img {
   display: grid;
@@ -487,7 +526,7 @@ body {
     width: 400px;
     height: 140px; }
     .b_img .back_img .image1 {
-      background-image: url(/breif2/img/pizza.jpg);
+      background-image: url(/breif2/img/404.png);
       background-size: 188px 150px;
       width: 47%;
       height: 125px;
@@ -500,7 +539,7 @@ body {
       width: 50%;
       display: flex;
       flex-direction: column;
-      font-size: 10px; }
+      font-size: 9px; }
     .b_img .back_img .image2 {
       background-image: url(/breif2/img/hamburger.jpg);
       background-size: 188px 150px;
@@ -509,6 +548,9 @@ body {
       background-repeat: no-repeat;
       border-radius: 15px;
       margin: 10px; }
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif; }
 
 .background {
   position: relative;
@@ -559,6 +601,7 @@ body {
     background-color: gray; }
 
 body {
+  font-family: 'Bai Jamjuree', sans-serif;
   position: relative;
   background-image: url(/breif2/img/interior.jpg);
   background-size: 1280px 900px;
@@ -578,34 +621,25 @@ body {
     display: flex;
     justify-content: space-between; }
     .alt .topp h1 {
-      margin-left: 10px;
-      width: 30%;
-      color: blue; }
+      margin-left: 2rem;
+      color: #343a40; }
     .alt .topp .searchh {
-      margin-top: 15px;
-      height: 40px;
-      width: 50%; }
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-around;
+      width: 60%; }
       .alt .topp .searchh input {
         border: 0.4px solid black;
-        width: 50%;
+        width: 70%;
         height: 40px;
         border-radius: 15px; }
-      .alt .topp .searchh .add {
-        background-color: #4ea54e;
-        width: 40px;
-        height: 40px;
-        margin-left: 10px;
-        border-radius: 50%;
-        border: 1px solid black;
-        cursor: pointer; }
-        .alt .topp .searchh .add .plus {
-          margin-left: 3px;
-          background-image: url(/breif2/img/add.png);
-          background-size: cover;
-          height: 20px;
-          width: 20px;
-          background-repeat: no-repeat;
-          cursor: pointer; }
+      .alt .topp .searchh .addp {
+        width: 40%;
+        display: flex; }
+        .alt .topp .searchh .addp a {
+          margin-left: 1rem;
+          text-decoration: none;
+          color: #000; }
   .alt table {
     padding: 20px;
     width: 80%; }
@@ -618,6 +652,9 @@ body {
         width: 15%;
         border: 1.5px solid blue;
         color: #000; }
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif; }
 
 .image .body {
   background-image: url(/breif2/img/interior.jpg);
@@ -658,9 +695,142 @@ body {
     padding: 15px;
     margin: 15px; }
 
+.heads {
+  background: #343a40;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .heads .headers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .heads .headers__logo {
+      margin: 5px;
+      height: 98px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center; }
+      .heads .headers__logo .logo {
+        background-image: url(/breif2/img/log.png);
+        background-size: cover;
+        background-position: center center;
+        width: 200px;
+        height: 57px;
+        background-repeat: no-repeat; }
+      .heads .headers__logo .tel p {
+        color: #fff;
+        font-size: 10px; }
+    .heads .headers .show {
+      display: grid;
+      grid-template-rows: 50px 20px;
+      grid-template-columns: 80px 80px 80px 80px;
+      justify-content: flex-end; }
+      .heads .headers .show__profil {
+        background-image: url(/breif2/img/user.svg);
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat; }
+      .heads .headers .show__menu {
+        background-image: url(/breif2/img/menu.svg);
+        background-size: 26px 55px;
+        width: 30%;
+        height: 100px;
+        background-repeat: no-repeat; }
+      .heads .headers .show__logout {
+        background-image: url(/breif2/img/logout.svg);
+        background-size: 26px 55px;
+        width: 30%;
+        height: 50px;
+        background-repeat: no-repeat; }
+      .heads .headers .show__inbox {
+        background-image: url(/breif2/img/inbox.svg);
+        background-size: 26px 55px;
+        width: 30%;
+        height: 50px;
+        background-repeat: no-repeat; }
+      .heads .headers .show #txt {
+        font-size: 12px;
+        color: #fff; }
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif; }
+
+.input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 15px;
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 11rem;
+  justify-content: center;
+  align-items: center; }
+  .input #changer {
+    margin-top: 25px;
+    margin-left: 120px;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    background-color: blue;
+    border: none; }
+
+.leftside {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 50px 40px 40px 40px 20px 132px 20px;
+  gap: 15px; }
+  .leftside input {
+    opacity: 0.7;
+    border: 1px solid chocolate;
+    border-radius: 4px;
+    height: 30px; }
+  .leftside #textarea {
+    opacity: 0.8;
+    border: 1px solid chocolate;
+    border-radius: 4px; }
+  .leftside #send {
+    width: 20%;
+    margin-left: 15rem;
+    color: #fff;
+    background-color: chocolate;
+    height: 30px;
+    border-radius: 14px;
+    opacity: 1;
+    border: none; }
+  .leftside #send:hover {
+    opacity: 0.8; }
+  .leftside label {
+    font-size: 18px; }
+
+table {
+  margin: 0 auto;
+  justify-items: center;
+  padding: 20px;
+  width: 80%; }
+  table tr {
+    height: 30px;
+    background-color: white;
+    text-align: center; }
+    table tr th {
+      background-color: rgba(255, 255, 255, 0.383);
+      width: 15%;
+      color: #000;
+      border: 1.5px solid chocolate; }
+    table tr td {
+      border: 1.5px solid chocolate; }
+      table tr td p {
+        font-size: 12px;
+        text-align: start; }
+
 .head {
-  background: #3f5efb;
-  background: radial-gradient(circle, #3f5efb 0%, #8546fc 100%);
+  background: #343a40;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -683,51 +853,25 @@ body {
         height: 57px;
         background-repeat: no-repeat; }
       .head .header__logo .tel p {
+        color: #fff;
         font-size: 10px; }
-    .head .header .show {
+    .head .header .grid {
       display: grid;
       grid-template-rows: 50px 20px;
-      grid-template-columns: 80px 80px 80px;
+      grid-template-columns: 80px 80px;
       justify-content: flex-end; }
-      .head .header .show__profil {
-        background-image: url(/breif2/img/user.svg);
+      .head .header .grid__home {
+        background-image: url(/breif2/img/home.svg);
         background-size: 26px 55px;
         width: 30%;
         height: 100px;
         background-repeat: no-repeat; }
-      .head .header .show__menu {
-        background-image: url(/breif2/img/menu.svg);
+      .head .header .grid__contact {
+        background-image: url(/breif2/img/contact.svg);
         background-size: 26px 55px;
         width: 30%;
         height: 100px;
         background-repeat: no-repeat; }
-      .head .header .show__user {
-        background-image: url(/breif2/img/logout.svg);
-        background-size: 26px 55px;
-        width: 30%;
-        height: 50px;
-        background-repeat: no-repeat; }
-      .head .header .show #txt {
+      .head .header .grid #txt {
         font-size: 12px;
-        color: #000; }
-
-.input {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
-  padding: 15px;
-  width: 70%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  margin: 20px; }
-  .input #changer {
-    margin-top: 25px;
-    margin-left: 120px;
-    color: white;
-    opacity: 0.8;
-    cursor: pointer;
-    border-radius: 15px;
-    width: 200px;
-    height: 30px;
-    background-color: blue;
-    border: none; }
+        color: #fff; }
