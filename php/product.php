@@ -1,6 +1,6 @@
 <?php
-$conn = mysqli_connect("localhost","root", "", "food");
-$query="SELECT * FROM products";
+$conn = mysqli_connect("localhost","root", "", "restaurant");
+$query="SELECT * FROM food";
 $req=mysqli_query($conn,$query);
      session_start();
     include('user.php');
@@ -68,8 +68,8 @@ $req=mysqli_query($conn,$query);
      <tr>
        <td> <?php echo $row["Code"]; ?> </td>
        <td> <?php echo $row["Name"]; ?> </td>
-       <td> <?php echo $row["Price"] . 'DH'; ?> </td>
-       <td><img style="width: 5rem; height:3rem; background-size:cover;background-position:24px 24px " src="../img/<?php echo $row["image"]; ?>" alt="">  </td>
+       <td> <?php echo $row["price"] . 'DH'; ?> </td>
+       <td><img style="width: 5rem; height:3rem; background-size:cover;background-position:24px 24px " src="../img/<?php echo $row["image"]; ?>" alt=""></td>
 
        <td> <button type="submit" name="Update" > <a href="updateproduct.php?Code=<?php echo $row["Code"];?>"> Update </a> </button><button type="submit" name="Delete"><a onclick="return confirm('are you sure')" href="deleteproduct.php?Code=<?php echo $row["Code"];?>"> Delete </a> </button> </td>
        

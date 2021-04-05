@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","root", "", "food") or die('Unable To connect');
+$conn = mysqli_connect("localhost","root", "", "restaurant") or die('Unable To connect');
 
 if(isset($_POST["send"])){
 
@@ -10,16 +10,18 @@ if(isset($_POST["send"])){
 
     if(empty($name) || empty($mess) || empty($email))
 {
-         echo "vide vider";
+    header("location:contact.php?fill= fill * blank");
+         
     }
     $sql="INSERT INTO inbox (fullName, Email, message, phone) VALUES ('$name', '$email', '$mess', '$phone')";
  if(mysqli_query($conn,$sql))
  {
-         
-             echo "message send";
+    header("location:contact.php?send= message send");
+        
          }
          else{
-            echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+            header("location:contact.php?error= ERROR: Could not able to execute");
+            
          }
         
  

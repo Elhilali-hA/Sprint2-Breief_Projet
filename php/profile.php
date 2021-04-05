@@ -5,7 +5,7 @@ session_start();
     if(isset(  $_SESSION['User'])){
 
        $var =$_SESSION['User'];
-        $conn = mysqli_connect("localhost","root", "", "food");
+        $conn = mysqli_connect("localhost","root", "", "restaurant");
         $query="SELECT * FROM admin  where pseudo ='$var'";
         $req=mysqli_query($conn,$query);
     }
@@ -43,11 +43,11 @@ session_start();
      {
 ?>
         <div>
-        <label for="fname">First name:</label> <input type="text" name="" disabled size="40" value="<?php echo $row["firstname"]; ?>">
+        <label for="fname">First name:</label> <input type="text" name="" disabled size="40" value="<?php echo $row["Firstname"]; ?>">
         <div>
-        <label for="fname">Last name:</label> <input type="text" name="lastname"disabled style="margin-top: 20px; " size="40" value="<?php echo $row["lastname"]; ?>">
+        <label for="fname">Last name:</label> <input type="text" name="lastname"disabled style="margin-top: 20px; " size="40" value="<?php echo $row["Lastname"]; ?>">
         <div>
-        <label for="fname">n°tel:</label> <input type="text" name="tel"disabled style="margin-top: 20px;margin-left: 35px;"size="40" value="<?php echo $row["tel"]; ?>">
+        <label for="fname">n°tel:</label> <input type="text" name="tel"disabled style="margin-top: 20px;margin-left: 35px;"size="40" value="<?php echo $row["phone"]; ?>">
         <div>
         <label for="fname">Email:</label> <input type="text" name="email" disabled style="margin-top: 20px;margin-left: 30px;"size="40" value="<?php echo $row["Email"]; ?>">
         <div>
@@ -71,14 +71,38 @@ session_start();
     <main class="password"> 
 <form method="post" action="pass.php">
         <h2>Change Password:</h2>
+        <?php 
+                        if(@$_GET['good']==true)
+                        {
+                    ?>
+                        <div><p style="color: green;"><?php echo $_GET['good'] ?></p></div>
+                    <?php
+                        }
+                    ?>
         <div>
         <label for="fname">password:</label> <input type="password" name="currentpassword" style="margin-top: 20px;margin-left: 60px;">
     </div>
+    <?php 
+                        if(@$_GET['false']==true)
+                        {
+                    ?>
+                        <div><p style="color: red;"><?php echo $_GET['false'] ?></p></div>
+                    <?php
+                        }
+                    ?>
     <div>
         <label for="fname">New password:</label> <input type="password" name="newpassword" style="margin-top: 20px;margin-left: 30px;">
     </div>
         <div class="password__butt">
          <label for="fname">Comfirm password:</label> <input type="password" name="confirmpassword" style="margin-top: 20px;">  
+         <?php 
+                        if(@$_GET['diff']==true)
+                        {
+                    ?>
+                        <div><p style="color: red;"><?php echo $_GET['diff'] ?></p></div>
+                    <?php
+                        }
+                    ?>
        <button id="changer" type="submit" name="change">changer</button>
         </div>
 </form>

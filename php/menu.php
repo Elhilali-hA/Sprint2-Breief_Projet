@@ -1,6 +1,6 @@
 <?php
-$conn = mysqli_connect("localhost","root", "", "food");
-$query="SELECT * FROM products";
+$conn = mysqli_connect("localhost","root", "", "restaurant");
+$query="SELECT * FROM food";
 $req=mysqli_query($conn,$query);
 
 
@@ -24,9 +24,19 @@ $req=mysqli_query($conn,$query);
     <title>Menu</title>
 </head>
 <body>
-   <?php include 'head-menu.php';  ?> 
+    
+    <script type="text/javascript" src="search-menu.js"></script>
+    <div class="commande">
+        <h1>Commande</h1>
+    <div class="passer">
+        <p>sous-total</p>
+        <p>livraison</p>
+        <p>total</p>
+        <button class="pcommande">Passer la commande</button>
+    </div>
+</div>
 
-   <script type="text/javascript" src="search-menu.js"></script>
+<?php include 'head-menu.php';  ?> 
 
 <div class="all"></div>
     <div class="top">
@@ -38,22 +48,13 @@ $req=mysqli_query($conn,$query);
        <div class="contact"><div class="tel"></div><span style="font-size: 12px;" class="tooltiptext">+212 512-345-678</span></div>
         </div>
     </div>
-    <div class="commande">
-        <h1>Commande</h1>
-        <div class="passer">
-            <p>sous-total</p>
-            <p>livraison</p>
-            <p>total</p>
-            <button class="pcommande">Passer la commande</button>
-        </div>
-    </div>
+    
+    
 
 
 
 
-
-
-
+    
     <main class="b_img" id="grid">
 
     <?php 
@@ -67,7 +68,7 @@ while ($row = mysqli_fetch_array($req))
     <div class="h1" id="title">
         <h1 id="title"><?php echo $row["Name"];?></h1>
         <div class="paragraph1">
-            <p><?php echo $row["Price"] .'Dh' ;?></p>
+            <p><?php echo $row["price"] .'Dh' ;?></p>
     </div>
  </div>
 </div>
@@ -77,6 +78,7 @@ while ($row = mysqli_fetch_array($req))
 ?>
 
 
+</main>
 
 
 
@@ -93,7 +95,6 @@ while ($row = mysqli_fetch_array($req))
 
 
 
-</main>
 
 
 

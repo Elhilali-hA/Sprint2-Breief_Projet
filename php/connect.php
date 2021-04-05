@@ -1,6 +1,6 @@
 <?php
 
-  $conn = mysqli_connect("localhost","root", "", "food");
+  $conn = mysqli_connect("localhost","root", "", "restaurant");
   session_start();
   
   

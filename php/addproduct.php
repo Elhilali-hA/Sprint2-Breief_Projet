@@ -40,12 +40,14 @@ include('user.php');
 
     <div class="opacityback__product">
    <label for="">Price :</label>
-       <input type="text" name="Price" placeholder="price" size="40" style="margin-left: 65px;margin-top:10px">
+       <input type="text" name="price" placeholder="price" size="40" style="margin-left: 65px;margin-top:10px">
     </div>
 
     <div class="opacityback__button">
      <button id="but" type="submit" style="color: white;" name="Add">Add</button>
     </div>
+
+  <div class="annuler"><button id="button" type="submit" style="color: white;"><a href="product.php">Annuler</a> </button></div>  
 
 </form>
 

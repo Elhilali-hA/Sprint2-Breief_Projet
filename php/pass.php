@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$conn = mysqli_connect("localhost","root", "", "food") or die('Unable To connect');
+$conn = mysqli_connect("localhost","root", "", "restaurant") or die('Unable To connect');
 $code = $_SESSION["User"];
 
 
@@ -17,12 +17,10 @@ $pa=$currentpassword == $row["password"];
 $paa =$newpass == $confirmp;
 
 if($pa!==true){
-     $mess = "Password is not correct";
-     echo $mess;
+    header("location:profile.php?false= Password is not correct");
     }
      if($paa!==true){
-        $mes = "new/cofirm Password different ";
-        echo $mes;
+        header("location:profile.php?diff= new/cofirm Password different");
      }
 
 if(($p==true)&($pa==true)&($paa==true))
@@ -30,16 +28,16 @@ if(($p==true)&($pa==true)&($paa==true))
      {
          mysqli_query($conn,"UPDATE admin set password='" . $newpass . "' WHERE pseudo='" . $code . "'");
          
-             $message = "Password Changed Sucessfully";
-             echo $message;
+             header("location:profile.php?good= Password Changed Sucessfully");
            
         }  if(($p==true)&($pa!==true)&($paa==true)){
      
-            echo "Password is not correct";
+            header("location:profile.php?false= Password is not correct");
+            
 
 }
 if(($p==true)&($pa==true)&($paa!==true)){
-    echo "new/cofirm Password different ";
+    header("location:profile.php?diff= new/cofirm Password different");
 
 }
 

@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","root", "", "food");
+$conn = mysqli_connect("localhost","root", "", "restaurant");
 $query="SELECT * FROM inbox";
 $req=mysqli_query($conn,$query);
      session_start();

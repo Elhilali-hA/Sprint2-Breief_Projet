@@ -123,24 +123,6 @@ body{
         flex-direction: column;
         font-size: 10px;
     }
-    .image2{
-        background-image: url(/breif2/img/hamburger.jpg);
-        background-size: 188px 150px;
-        width: 47%;
-        height: 145px;
-        background-repeat: no-repeat;
-        border-radius: 15px;
-        margin: 10px;
-    }
-    .image3{
-        background-image: url(/breif2/img/Tcos.jpg);
-        background-size: 188px 150px;
-        width: 47%;
-        height: 145px;
-        background-repeat: no-repeat;
-        border-radius: 15px;
-        margin: 10px;
-    }
     
 }
 }
@@ -150,7 +132,7 @@ body{
     width: 40%;
     border: none;
     color: #fff;
-    background-color: chocolate;
+    background-color: #d2691e;
     margin-left: 23rem;
     cursor: pointer;
     transition: 0.5s;
@@ -192,7 +174,6 @@ body{
 margin-left: 100px;
     padding: 33px;
     &__background{
-
     background-color: rgba(249, 251, 252, 0.8);
     padding: 23px;
     width: 88%;
@@ -215,7 +196,7 @@ margin-left: 100px;
     }
     p{
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
         margin-top: -2px;
     }
 }
@@ -346,4 +327,106 @@ margin-left: 100px;
    
     
 }
+}
+
+@media screen and (max-width: 905px) {
+    .bac_img{
+        margin: 20px;
+          display: grid;
+          grid-template-columns: 400px;
+          grid-template-rows: auto;
+          justify-content: center;
+          row-gap: 40px;
+    }
+    #commander{
+        margin: 0 35%;
+    }
+    .footer{
+        &__background{
+            display: none;
+            display:  grid;
+            grid-template-columns: 400px;
+          grid-template-rows: auto;
+          justify-content: center;
+          row-gap: 20px;
+
+        }
+        &__head{
+            grid-area:unset;
+            
+        }
+        &__card1{
+            grid-area: unset;
+            
+        }
+        
+        &__foot1{
+            grid-area: unset;
+           
+        }
+        &__card2{
+            grid-area: unset;  
+        }
+        
+        &__card3{
+            grid-area: unset;
+        }
+        
+        &__card4{
+            grid-area: unset;
+        }
+        
+        &__foot2{
+            grid-area:unset;
+        }
+        &__foot3{
+            grid-area: unset;
+        }
+        &__foot4{
+            grid-area: unset;
+            
+        }
+    
+    }
+}
+
+
+
+@media screen and (max-width: 790px){
+    .price{
+            &__background{
+            height: 150px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 170px;
+            
+            }
+        }
+        .deliver .grenn {
+            display: grid;
+            grid-template-columns: 60px 60px 60px;
+            grid-template-rows: 40px 40px;
+            column-gap: 100px;
+            justify-content: center;
+            padding: 33px;
+        }
+
+}
+@media screen and (max-width: 550px){
+    .price{
+            margin-left: 0;
+            p{
+                margin-top: 1rem;
+                font-size: 9px;
+            }
+        }
+        .deliver .grenn {
+            display: grid;
+            grid-template-columns: 60px 60px 60px;
+            grid-template-rows: 40px 40px;
+            column-gap: 50px;
+            justify-content: center;
+            padding: 33px;
+        }
+
 }

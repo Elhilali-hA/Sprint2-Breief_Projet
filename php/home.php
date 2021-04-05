@@ -1,6 +1,6 @@
 <?php
-$conn = mysqli_connect("localhost","root", "", "food");
-$query="SELECT * FROM products limit 4";
+$conn = mysqli_connect("localhost","root", "", "restaurant");
+$query="SELECT * FROM food limit 4";
 $req=mysqli_query($conn,$query);
 
 

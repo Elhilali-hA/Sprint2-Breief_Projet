@@ -11,10 +11,8 @@
 <body>
   <?php include 'head-menu.php';  ?>  
   <form action="insert.php" method="POST">
-  <div class="leftside">
-  <h1>Contact Us</h1>
- 
-  
+    <div class="leftside">
+    <h1>Contact Us</h1>
   <div>
       <label for="fname">Email Adresse<span style="color: red;">*</span>:</label> <input placeholder="Your Email" type="text" name="email" size="40">
     </div>
@@ -26,7 +24,34 @@
         <label for="fname">Message<span style="color: red;">*</span>:</label>
         <textarea placeholder="Write your message"  id="textarea" cols="30" name="message" rows="10"></textarea>
         <button id="send" type="submit" name="send">Send</button>
+        <?php 
+                        if(@$_GET['fill']==true)
+                        {
+                    ?>
+                        <div class="msg"><p style="color: red;"><?php echo $_GET['fill'] ?></p></div>
+                    <?php
+                        }
+                    ?>
+        
+        <?php 
+                        if(@$_GET['send']==true)
+                        {
+                    ?>
+                        <div class="msg"><p style="color: green;"><?php echo $_GET['send'] ?></p></div>
+                    <?php
+                        }
+                    ?>
+        <?php 
+                        if(@$_GET['error']==true)
+                        {
+                    ?>
+                        <div class="msg"><p style="color: green;"><?php echo $_GET['error'] ?></p></div>
+                    <?php
+                        }
+                    ?>            
+ 
     </div>
+    
 </form>
   <div class="rightside"></div>
 </body>

@@ -1,8 +1,8 @@
 <?php
 
 $code = isset($_GET["Code"])?$_GET["Code"]:0;
-$conn = mysqli_connect("localhost","root", "", "food");
-$query="SELECT * FROM products where Code=$code";
+$conn = mysqli_connect("localhost","root", "", "restaurant");
+$query="SELECT * FROM food where Code=$code";
 $req=mysqli_query($conn,$query);
 $row = mysqli_fetch_array($req);
 
@@ -43,7 +43,7 @@ session_start();
    <label for="fname">Product name:</label> <input type="text" name="Name"  size="40" style="margin-top:10px ;" value="<?php echo $row["Name"] ?>" >
    </div>
    <div>
-   <label for="fname">Price:</label> <input type="text" name="Price" style="margin-top: 20px; " size="40" value="<?php echo $row["Price"] ?>" >
+   <label for="fname">Price:</label> <input type="text" name="price" style="margin-top: 20px; " size="40" value="<?php echo $row["price"] ?>" >
    </div>
    <div>
    <label for="fname">image:</label> <input type="file" name="image" style="margin-top: 20px;margin-left: 35px;"size="40" value="<?php echo $row["image"] ?>">

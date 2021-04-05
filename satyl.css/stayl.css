@@ -99,22 +99,6 @@ body {
       display: flex;
       flex-direction: column;
       font-size: 10px; }
-    .bac_img .back_img .image2 {
-      background-image: url(/breif2/img/hamburger.jpg);
-      background-size: 188px 150px;
-      width: 47%;
-      height: 145px;
-      background-repeat: no-repeat;
-      border-radius: 15px;
-      margin: 10px; }
-    .bac_img .back_img .image3 {
-      background-image: url(/breif2/img/Tcos.jpg);
-      background-size: 188px 150px;
-      width: 47%;
-      height: 145px;
-      background-repeat: no-repeat;
-      border-radius: 15px;
-      margin: 10px; }
 
 #commander {
   border-radius: 15px;
@@ -122,7 +106,7 @@ body {
   width: 40%;
   border: none;
   color: #fff;
-  background-color: chocolate;
+  background-color: #d2691e;
   margin-left: 23rem;
   cursor: pointer;
   transition: 0.5s; }
@@ -178,7 +162,7 @@ body {
     background-repeat: no-repeat; }
   .price p {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: -2px; }
 
 .footer__background {
@@ -274,6 +258,70 @@ body {
     border-radius: 30px;
     height: 500px;
     background-repeat: no-repeat; }
+
+@media screen and (max-width: 905px) {
+  .bac_img {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: auto;
+    justify-content: center;
+    row-gap: 40px; }
+  #commander {
+    margin: 0 35%; }
+  .footer__background {
+    display: none;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: auto;
+    justify-content: center;
+    row-gap: 20px; }
+  .footer__head {
+    grid-area: unset; }
+  .footer__card1 {
+    grid-area: unset; }
+  .footer__foot1 {
+    grid-area: unset; }
+  .footer__card2 {
+    grid-area: unset; }
+  .footer__card3 {
+    grid-area: unset; }
+  .footer__card4 {
+    grid-area: unset; }
+  .footer__foot2 {
+    grid-area: unset; }
+  .footer__foot3 {
+    grid-area: unset; }
+  .footer__foot4 {
+    grid-area: unset; } }
+
+@media screen and (max-width: 790px) {
+  .price__background {
+    height: 150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 170px; }
+  .deliver .grenn {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 40px 40px;
+    column-gap: 100px;
+    justify-content: center;
+    padding: 33px; } }
+
+@media screen and (max-width: 550px) {
+  .price {
+    margin-left: 0; }
+    .price p {
+      margin-top: 1rem;
+      font-size: 9px; }
+  .deliver .grenn {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 40px 40px;
+    column-gap: 50px;
+    justify-content: center;
+    padding: 33px; } }
 
 .head {
   background: #343a40;
@@ -411,6 +459,7 @@ body {
     text-align: center; }
 
 body {
+  background-image: none;
   font-family: 'Bai Jamjuree', sans-serif; }
 
 .all {
@@ -483,6 +532,7 @@ body {
         visibility: visible; }
 
 .commande {
+  background-image: none;
   background-color: white;
   border-radius: 15px;
   width: 20%;
@@ -575,30 +625,38 @@ body {
   border-radius: 15px; }
   .opacityback__logo {
     justify-content: center;
-    background-image: url(/breif2/img/logo.png);
+    background-image: url(/breif2/img/log.png);
     background-size: 306px 198px;
     width: 230px;
     height: 172px;
     background-repeat: no-repeat;
     margin-left: 100px; }
-  .opacityback__button #but:hover {
-    opacity: 1; }
-  .opacityback__button #but {
-    margin-top: 25px;
-    margin-left: 154px;
-    opacity: 0.8;
-    cursor: pointer;
-    border-radius: 15px;
-    width: 200px;
-    height: 30px;
-    background-color: blue;
-    border: none; }
-  .opacityback #fichier {
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
-    color: black;
-    background-color: gray; }
+  .opacityback__button {
+    justify-self: center; }
+    .opacityback__button #but:hover {
+      opacity: 1; }
+    .opacityback__button #but {
+      margin-left: 3rem;
+      opacity: 0.8;
+      cursor: pointer;
+      border-radius: 15px;
+      width: 200px;
+      height: 30px;
+      background-color: blue;
+      border: none; }
+  .opacityback .annuler {
+    width: 600px; }
+    .opacityback .annuler #button {
+      float: right;
+      opacity: 0.8;
+      cursor: pointer;
+      border-radius: 15px;
+      width: 100px;
+      height: 30px;
+      background-color: white;
+      border: none; }
+      .opacityback .annuler #button a {
+        text-decoration: none; }
 
 body {
   font-family: 'Bai Jamjuree', sans-serif;
@@ -808,6 +866,10 @@ body {
     opacity: 0.8; }
   .leftside label {
     font-size: 18px; }
+  .leftside .msg {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 15px; }
 
 table {
   margin: 0 auto;
